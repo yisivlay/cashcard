@@ -1,0 +1,22 @@
+meta {
+  name: UPDATE
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{url}}/cashcards/2
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "amount":"101.00"
+  }
+}

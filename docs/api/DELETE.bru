@@ -1,0 +1,22 @@
+meta {
+  name: DELETE
+  type: http
+  seq: 6
+}
+
+delete {
+  url: {{url}}/cashcards/2
+  body: none
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
+
+body:json {
+  {
+    "amount":"101.00"
+  }
+}

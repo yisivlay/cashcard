@@ -1,0 +1,16 @@
+meta {
+  name: GET One
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{url}}/cashcards/2
+  body: none
+  auth: basic
+}
+
+auth:basic {
+  username: {{username}}
+  password: {{password}}
+}
